@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/out.css">
+</head>
+
+<body>
+    <section class=" w-full min-h-[100vh] flex flex-wrap ">
+        <header
+            class=" relative row h-[110px] w-full 2xl:container items-center justify-between mx-auto  px-[10%] lg:px-[7%] py-5 relative">
+            <div class=" flex items-center w-1/5">
+                <svg width="107" height="32" viewBox="0 0 107 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M27.776 7.52C27.776 9.33333 27.136 10.9013 25.856 12.224C24.576 13.5253 22.7093 14.464 20.256 15.04C21.5787 15.4027 22.5813 16 23.264 16.832C23.9467 17.6427 24.288 18.5813 24.288 19.648C24.288 21.3333 23.7547 22.7947 22.688 24.032C21.6427 25.2693 20.1067 26.2293 18.08 26.912C16.0533 27.5733 13.6107 27.904 10.752 27.904C9.68533 27.904 8.832 27.872 8.192 27.808C8.17067 28.4053 7.91467 28.8533 7.424 29.152C6.93333 29.4507 6.304 29.6 5.536 29.6C4.768 29.6 4.23467 29.4293 3.936 29.088C3.65867 28.7467 3.54133 28.2453 3.584 27.584C3.776 24.5973 4.14933 21.472 4.704 18.208C5.25867 14.9227 5.96267 11.7547 6.816 8.704C6.96533 8.17067 7.264 7.79733 7.712 7.584C8.16 7.37067 8.74667 7.264 9.472 7.264C10.7733 7.264 11.424 7.62667 11.424 8.352C11.424 8.65067 11.36 8.992 11.232 9.376C10.6773 11.04 10.1227 13.3013 9.568 16.16C9.01333 18.9973 8.61867 21.7067 8.384 24.288C9.408 24.3733 10.24 24.416 10.88 24.416C13.8667 24.416 16.0533 23.9893 17.44 23.136C18.848 22.2613 19.552 21.152 19.552 19.808C19.552 18.8693 19.1467 18.08 18.336 17.44C17.5467 16.8 16.2133 16.448 14.336 16.384C13.9093 16.3627 13.6107 16.256 13.44 16.064C13.2693 15.872 13.184 15.5627 13.184 15.136C13.184 14.5173 13.312 14.016 13.568 13.632C13.824 13.248 14.2933 13.0453 14.976 13.024C16.4907 12.9813 17.856 12.7573 19.072 12.352C20.3093 11.9467 21.28 11.3813 21.984 10.656C22.688 9.90933 23.04 9.04533 23.04 8.064C23.04 6.82667 22.432 5.856 21.216 5.152C20 4.42667 18.1333 4.064 15.616 4.064C13.3333 4.064 11.1253 4.36267 8.992 4.96C6.85867 5.536 5.04533 6.272 3.552 7.168C2.86933 7.57333 2.29333 7.776 1.824 7.776C1.44 7.776 1.14133 7.648 0.928 7.392C0.736 7.11467 0.64 6.77333 0.64 6.368C0.64 5.83467 0.746667 5.376 0.96 4.992C1.19467 4.608 1.73867 4.17067 2.592 3.68C4.384 2.656 6.48533 1.856 8.896 1.28C11.3067 0.703999 13.7707 0.415998 16.288 0.415998C20.1493 0.415998 23.0293 1.06667 24.928 2.368C26.8267 3.66933 27.776 5.38667 27.776 7.52ZM31.5718 10.976C30.6758 10.976 30.0038 10.7733 29.5558 10.368C29.1078 9.94133 28.8838 9.35467 28.8838 8.608C28.8838 7.86133 29.1718 7.24267 29.7478 6.752C30.3451 6.24 31.0811 5.984 31.9558 5.984C32.7451 5.984 33.3851 6.176 33.8758 6.56C34.3664 6.944 34.6118 7.488 34.6118 8.192C34.6118 9.04533 34.3344 9.728 33.7798 10.24C33.2251 10.7307 32.4891 10.976 31.5718 10.976ZM31.3158 28.16C29.9291 28.16 28.9158 27.6693 28.2758 26.688C27.6571 25.7067 27.3478 24.4053 27.3478 22.784C27.3478 21.824 27.4651 20.5973 27.6998 19.104C27.9558 17.5893 28.2758 16.1813 28.6598 14.88C28.8518 14.1973 29.1078 13.728 29.4278 13.472C29.7478 13.216 30.2598 13.088 30.9638 13.088C32.0518 13.088 32.5958 13.4507 32.5958 14.176C32.5958 14.7093 32.3931 15.9467 31.9878 17.888C31.4758 20.2347 31.2198 21.824 31.2198 22.656C31.2198 23.296 31.3051 23.7867 31.4758 24.128C31.6464 24.4693 31.9344 24.64 32.3398 24.64C32.7238 24.64 33.2038 24.3733 33.7798 23.84C34.3558 23.3067 35.1238 22.464 36.0838 21.312C36.3398 21.0133 36.6278 20.864 36.9478 20.864C37.2251 20.864 37.4384 20.992 37.5878 21.248C37.7584 21.504 37.8438 21.856 37.8438 22.304C37.8438 23.1573 37.6411 23.8187 37.2358 24.288C35.1238 26.8693 33.1504 28.16 31.3158 28.16ZM49.5268 20.864C49.8041 20.864 50.0174 20.992 50.1667 21.248C50.3374 21.504 50.4228 21.856 50.4228 22.304C50.4228 23.1573 50.2201 23.8187 49.8148 24.288C48.8974 25.4187 47.8948 26.3467 46.8068 27.072C45.7188 27.7973 44.4708 28.16 43.0628 28.16C38.7108 28.16 36.5348 25.0987 36.5348 18.976C36.5348 18.0373 36.5668 17.088 36.6308 16.128H35.3828C34.7428 16.128 34.3054 16.0107 34.0708 15.776C33.8574 15.5413 33.7508 15.168 33.7508 14.656C33.7508 13.4613 34.2308 12.864 35.1908 12.864H37.0148C37.3774 10.5173 37.9321 8.37333 38.6788 6.432C39.4254 4.49067 40.3214 2.944 41.3668 1.792C42.4334 0.639999 43.5748 0.0639992 44.7908 0.0639992C45.6868 0.0639992 46.3908 0.458666 46.9028 1.248C47.4148 2.03733 47.6708 3.02933 47.6708 4.224C47.6708 7.53067 46.2841 10.4107 43.5108 12.864H47.0948C47.4361 12.864 47.6814 12.9387 47.8308 13.088C47.9801 13.2373 48.0548 13.5147 48.0548 13.92C48.0548 15.392 46.8494 16.128 44.4388 16.128H40.5348C40.4921 17.1947 40.4708 18.0267 40.4708 18.624C40.4708 20.8427 40.7268 22.4 41.2388 23.296C41.7721 24.192 42.6041 24.64 43.7348 24.64C44.6521 24.64 45.4628 24.3627 46.1668 23.808C46.8708 23.2533 47.7028 22.4213 48.6628 21.312C48.9188 21.0133 49.2068 20.864 49.5268 20.864ZM43.9268 3.136C43.6068 3.136 43.2441 3.54133 42.8388 4.352C42.4548 5.14133 42.0814 6.25067 41.7188 7.68C41.3774 9.088 41.0894 10.656 40.8548 12.384C42.1134 11.296 43.0521 10.08 43.6708 8.736C44.3108 7.37067 44.6308 6.13333 44.6308 5.024C44.6308 3.76533 44.3961 3.136 43.9268 3.136ZM72.6173 8.928C72.6173 10.7413 72.1479 12.4053 71.2093 13.92C70.2706 15.4347 68.9053 16.672 67.1133 17.632C65.3213 18.592 63.1879 19.1573 60.7133 19.328L59.3373 27.04C58.8039 30.0053 57.3533 31.488 54.9853 31.488C53.6839 31.488 52.4786 31.104 51.3693 30.336C50.2813 29.568 49.4066 28.3947 48.7453 26.816C48.0839 25.2373 47.7533 23.296 47.7533 20.992C47.7533 16.6613 48.4466 12.992 49.8333 9.984C51.2413 6.95467 53.1186 4.69333 55.4653 3.2C57.8333 1.68533 60.4359 0.927999 63.2733 0.927999C65.2786 0.927999 66.9746 1.28 68.3613 1.984C69.7693 2.688 70.8253 3.648 71.5293 4.864C72.2546 6.05866 72.6173 7.41333 72.6173 8.928ZM61.2893 16.032C65.6626 15.4773 67.8493 13.2053 67.8493 9.216C67.8493 7.808 67.3799 6.66667 66.4413 5.792C65.5239 4.896 64.0946 4.448 62.1533 4.448C59.9559 4.448 58.0359 5.14133 56.3933 6.528C54.7719 7.91467 53.5133 9.84533 52.6173 12.32C51.7426 14.7733 51.3053 17.5787 51.3053 20.736C51.3053 22.0587 51.4333 23.232 51.6893 24.256C51.9666 25.28 52.3079 26.08 52.7133 26.656C53.1399 27.2107 53.5453 27.488 53.9293 27.488C54.4626 27.488 54.8679 26.752 55.1453 25.28L56.2013 19.232C55.3693 19.104 55.0066 19.0507 55.1133 19.072C54.4733 18.9653 54.0573 18.7733 53.8653 18.496C53.6733 18.1973 53.5773 17.824 53.5773 17.376C53.5773 16.9067 53.7053 16.5333 53.9613 16.256C54.2386 15.9787 54.6119 15.84 55.0813 15.84C55.2946 15.84 55.4546 15.8507 55.5613 15.872C56.0733 15.9573 56.4679 16.0107 56.7453 16.032C57.0226 14.368 57.4173 12.1387 57.9293 9.344C58.0573 8.61867 58.3453 8.10667 58.7933 7.808C59.2626 7.488 59.8066 7.328 60.4253 7.328C61.1293 7.328 61.6306 7.46667 61.9293 7.744C62.2493 8 62.4093 8.416 62.4093 8.992C62.4093 9.33333 62.3879 9.61067 62.3453 9.824L61.2893 16.032ZM74.7845 28.16C73.4618 28.16 72.4058 27.68 71.6165 26.72C70.8272 25.76 70.4325 24.5013 70.4325 22.944C70.4325 21.2373 70.8272 19.6267 71.6165 18.112C72.4058 16.576 73.4512 15.3493 74.7525 14.432C76.0752 13.4933 77.4725 13.024 78.9445 13.024C79.4138 13.024 79.7232 13.12 79.8725 13.312C80.0432 13.4827 80.1818 13.8027 80.2885 14.272C80.7365 14.1867 81.2058 14.144 81.6965 14.144C82.7418 14.144 83.2645 14.5173 83.2645 15.264C83.2645 15.712 83.1045 16.7787 82.7845 18.464C82.2938 20.9173 82.0485 22.624 82.0485 23.584C82.0485 23.904 82.1232 24.16 82.2725 24.352C82.4432 24.544 82.6565 24.64 82.9125 24.64C83.3178 24.64 83.8085 24.384 84.3845 23.872C84.9605 23.3387 85.7392 22.4853 86.7205 21.312C86.9765 21.0133 87.2645 20.864 87.5845 20.864C87.8618 20.864 88.0752 20.992 88.2245 21.248C88.3952 21.504 88.4805 21.856 88.4805 22.304C88.4805 23.1573 88.2778 23.8187 87.8725 24.288C86.9978 25.376 86.0698 26.2933 85.0885 27.04C84.1072 27.7867 83.1578 28.16 82.2405 28.16C81.5365 28.16 80.8858 27.9253 80.2885 27.456C79.7125 26.9653 79.2752 26.304 78.9765 25.472C77.8672 27.264 76.4698 28.16 74.7845 28.16ZM75.9365 24.928C76.4058 24.928 76.8538 24.6507 77.2805 24.096C77.7072 23.5413 78.0165 22.8053 78.2085 21.888L79.3925 16C78.4965 16.0213 77.6645 16.3627 76.8965 17.024C76.1498 17.664 75.5525 18.5173 75.1045 19.584C74.6565 20.6507 74.4325 21.7813 74.4325 22.976C74.4325 23.6373 74.5605 24.128 74.8165 24.448C75.0938 24.768 75.4672 24.928 75.9365 24.928ZM88.1518 28.16C87.3411 28.16 86.7651 27.7333 86.4238 26.88C86.1038 26.0267 85.9438 24.6613 85.9438 22.784C85.9438 20.0107 86.3384 17.376 87.1278 14.88C87.3198 14.2613 87.6291 13.8133 88.0558 13.536C88.5038 13.2373 89.1224 13.088 89.9118 13.088C90.3384 13.088 90.6371 13.1413 90.8078 13.248C90.9784 13.3547 91.0638 13.5573 91.0638 13.856C91.0638 14.1973 90.9038 14.9653 90.5838 16.16C90.3704 17.0133 90.1998 17.76 90.0718 18.4C89.9438 19.04 89.8371 19.8293 89.7518 20.768C90.4558 18.9333 91.2451 17.44 92.1198 16.288C92.9944 15.136 93.8478 14.3147 94.6798 13.824C95.5331 13.3333 96.3118 13.088 97.0158 13.088C97.6984 13.088 98.2104 13.2693 98.5518 13.632C98.9144 13.9733 99.0958 14.4853 99.0958 15.168C99.0958 15.7227 98.9784 16.768 98.7438 18.304C98.5304 19.6053 98.3598 20.8427 98.2318 22.016C98.1038 23.168 98.0398 24.4587 98.0398 25.888C98.0398 26.6987 97.8691 27.2853 97.5278 27.648C97.2078 27.9893 96.6744 28.16 95.9278 28.16C95.2238 28.16 94.7118 27.9787 94.3918 27.616C94.0718 27.2533 93.9118 26.7093 93.9118 25.984C93.9118 25.1307 94.0611 23.7227 94.3598 21.76C94.6158 20.0533 94.7438 18.9653 94.7438 18.496C94.7438 18.1547 94.6264 17.984 94.3918 17.984C94.1144 17.984 93.7198 18.3467 93.2078 19.072C92.7171 19.776 92.2051 20.7147 91.6718 21.888C91.1598 23.0613 90.7438 24.2987 90.4238 25.6C90.1891 26.6027 89.9118 27.2853 89.5918 27.648C89.2931 27.9893 88.8131 28.16 88.1518 28.16ZM103.588 28.16C102.649 28.16 101.934 27.904 101.444 27.392C100.974 26.88 100.74 26.208 100.74 25.376C100.74 24.416 101.006 23.648 101.54 23.072C102.094 22.496 102.862 22.208 103.844 22.208C104.782 22.208 105.486 22.4427 105.956 22.912C106.446 23.36 106.692 24.032 106.692 24.928C106.692 25.9093 106.414 26.6987 105.86 27.296C105.305 27.872 104.548 28.16 103.588 28.16Z"
+                        fill="currentColor"></path>
+
+                </svg>
+            </div>
+            <nav class="hidden lg:w-3/5 lg:flex items-center justify-center ">
+                <ul class="flex justify-center items-center h-fit *:uppercase   *:text-black gap-12  ">
+                    <li class="flex justify-center items-center  group "><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                        <a href="" class="">gallery</a>
+                        <div
+                            class="mega *:transition hidden lg:visible bg-white group-hover:flex duration-300 gap-25 flex  z-10 absolute w-full top-[70px] left-0 gap-10 px-6 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-[3px] after:bg-gray-400/15    hidden ">
+                            <div class="first mx-1 py-3  ">
+                                <h2 class=" my-2 text-gray-600">Demo pages</h2>
+                                <ul class="flex whitespace-nowrap flex-col *:h-[40px] ">
+                                    <li><a href="">Home skincare</a></li>
+                                    <li><a href="">Home fashion</a></li>
+                                    <li><a href="">Coming soon</a></li>
+                                    <li><a href="">our freind</a></li>
+                                </ul>
+                            </div>
+                            <div class="second py-3">
+                                <h2 class="my-2 text-gray-600">Collections</h2>
+                                <ul class="flex whitespace-nowrap flex-col *:h-[40px]">
+                                    <li><a href="">All collections 1</a></li>
+                                    <li><a href="">All collections 2</a></li>
+                                    <li><a href="">Collection page</a></li>
+                                    <li><a href="">Product Detail</a></li>
+                                </ul>
+                            </div>
+                            <div class="third py-3 ">
+                                <h2 class="my-2 text-gray-600">What's new</h2>
+                                <ul
+                                    class="flex whitespace-nowrap flex-col *:h-[40px] *:hover:bg-amber-50 *:transition *:duration-200">
+                                    <li><a href="">Contact us</a></li>
+                                    <li><a href="">About us</a></li>
+                                    <li><a href="">Journal / Blog</a></li>
+                                    <li><a href="">Login / Sign up</a></li>
+                                    <li><a href="">Shopping Cart</a></li>
+                                    <li>Orders<a href=""></a></li>
+                                </ul>
+                            </div>
+                            <div class="flex mx-7 gap-2 ">
+                                <div class="relative   ">
+                                    <img class="w-[930px] h-[298px]" src="img/feature-6.webp" alt="">
+                                    <div
+                                        class="absolute bottom-10 left-2 text-black bg-amber-50 w-[170px] h-[50px] rounded-[100px] flex justify-center items-center">
+                                        <span>face wash</span>
+                                    </div>
+                                    <span
+                                        class="absolute bottom-12 left-46  w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+
+                                    </span>
+
+
+                                </div>
+                                <div class="relative ">
+                                    <img src="img/c1.jpg" alt="">
+                                    <div
+                                        class="absolute bottom-10 left-2 text-black bg-amber-50 w-[170px] h-[50px] rounded-[100px] flex justify-center items-center">
+                                        <span>face wash</span>
+                                    </div>
+                                    <span
+                                        class="absolute bottom-12 left-46  w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+
+                                    </span>
+                                </div>
+                                <div class="relative ">
+                                    <img class=" " src="img/p2-1-1.jpg" alt="">
+                                    <div
+                                        class="absolute bottom-10 left-2 text-black bg-amber-50 w-[170px] h-[50px] rounded-[100px] flex justify-center items-center">
+                                        <span>face wash</span>
+                                    </div>
+                                    <span
+                                        class="absolute bottom-12 left-46  w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+
+                                    </span>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+                    <li><a href="">explor</a></li>
+                    <li class="flex justify-center items-center group relative *:transition"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                        <a href="">shop</a>
+                        <ul
+                            class="bg-white  w-[200px] top-[50px] left-0 absolute *:flex  *:items-center *:ps-2 *:h-[40px] z-20 hidden group-hover:block">
+                            <li><a href="">demo pages</a></li>
+                            <li><a href="">demo pages</a></li>
+                            <li><a href="">demo pages</a></li>
+                            <li><a href="">demo pages</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="relative flex justify-center items-center group"> <svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg><a href="">checkout</a>
+                        <ul
+                            class="bg-white w-[200px] top-[50px]  z-30 left-0 absolute *:flex *:items-center *:ps-2 *:h-[40px] hidden group-hover:block">
+                            <li><a href="">demo pages</a></li>
+                            <li><a href="">demo pages</a></li>
+                            <li><a href="">demo pages</a></li>
+                            <li><a href="">demo pages</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="w-1/5 flex items-center justify-center gap-3 ">
+                <ul class="flex justify-end items-center gap-2 ">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                        <a href=""></a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        <a href=""></a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        <a href=""></a>
+                    </li>
+                </ul>
+                <div class="lg:hidden w-[50px] h-[50px] flex items-center justify-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- end header -->
+        <section>
+            <div class=" g-0  flex flex-col lg:flex-row  py-10  h-[100vh]">
+                <div
+                    class=" px-5    mt-2  *:text-black *:text-center gap-10  *:lg:text-start    bg-[#ECFF9F] flex flex-col justify-center ">
+                    <svg width="48" height="48" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3045_1353)">
+                            <path
+                                d="M16.5 0C16.5 0 17.9497 8.10256 21.4236 11.5764C24.8974 15.0503 33 16.5 33 16.5C33 16.5 24.8974 17.9497 21.4236 21.4236C17.9497 24.8974 16.5 33 16.5 33C16.5 33 15.0503 24.8974 11.5764 21.4236C8.10256 17.9497 0 16.5 0 16.5C0 16.5 8.10256 15.0503 11.5764 11.5764C15.0503 8.10256 16.5 0 16.5 0Z"
+                                fill="black"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3045_1353">
+                                <rect width="33" height="33" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h1 class="text-6xl w-[450px] mt-2  ">True to Oneself kind to Nature.</h1>
+                    <h2 class="text-3xl mt-4 ">Unreservedly honest products that truly work, and be kind to skin and the
+                        planet no exceptions!
+                    </h2>
+                    <div
+                        class=" lg:w-[700px] h-[50px] px-[2%] mt-6 flex  items-center bottom-2 *:uppercase  rounded-3xl relative bg-white justify-center">
+                        <span class="*:text-center text-[20px]">explore all products</span>
+                        <span
+                            class="absolute bottom-1 left-[15px]  w-[40px] h-10 rounded-full  bg-black/5  flex items-center justify-center ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="py-3 w-full lg:w-1/2 overflow-hidden ">
+                    <img src="img/hero.png" alt=""
+                        class=" w-full h-auto lg:h-full object-contain lg:object-cover block  ">
+
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+    <!-- second section -->
+    <section>
+        <div class="all mx-4 gap-4   flex lg:flex-row flex-col lg:justify-between  ">
+            <div class="lef  mt-2 flex flex-col w-full lg:w-2/3">
+                <h3 class="text-5xl max-w-[450px] ">Find your own unique style, and thousand of brands.</h3>
+                <div
+                    class="tokme  flex-wrap flex gap-3 *:h-[40px] text-2xl *:border-1 *:border-black mt-8  *:rounded-2xl *:text-center   *:cursor-pointer *:transition *:duration-200 *:hover:bg-black *:hover:text-white ">
+                    <a href="" class="w-[100px] ">skincare</a>
+                    <a href="" class="w-[100px]">haircare</a>
+                    <a href="" class="w-[100px]">makeup</a>
+                    <a href="" class="w-[150px]">best products</a>
+                    <a href="" class="w-[200px]">tools and accessories</a>
+
+                </div>
+            </div>
+            <div class="righ  flex flex-col gap-2 w-full lg:w-1/3 lg:items-end gap-2  ">
+                <h4 class="text-3xl">get 15% discount on your first order!</h4>
+                <a href=""
+                    class="text-xl  w-[100px] h-[30px] border-1 border-black text-center rounded-4xl transition duration-200 hover:bg-black cursor-pointer hover:text-white ">shop
+                    now</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- end this section -->
+    <section>
+        <div class="flex flex-col lg:flex-row gap-3 py-4">
+            <div
+                class="relative  mx-0 w-full overflow-hidden sm:w-[45%] lg:w-[24%]  h-[420px] mx-3 rounded-2xl  after:z-[5] after:content-[''] after:absolute after:w-[100%] after:h-[100%] after:opacity-0 after:bg-black/100 after:left-0 after:top-0 after:transition after:duration-200 hover:after:opacity-10 ">
+                <img src="img/feature-6.webp" alt="" class="object-cover block w-full h-full">
+                <div
+                    class="absolute bottom-10 left-2 text-black bg-amber-50 w-[190px] h-[50px] rounded-[100px] flex justify-center items-center">
+                    <span>face wash</span>
+                </div>
+                <span
+                    class="absolute bottom-12 left-46 capitalize w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+
+                </span>
+            </div>
+            <div
+                class="relative   overflow-hidden sm:w-[45%] lg:w-[24%] h-[420px] rounded-2xl  after:z-[5] after:content-[''] after:absolute after:w-[100%] after:h-[100%] after:opacity-0 after:bg-black/90 after:left-0 after:top-0 after:transition after:duration-200 hover:after:opacity-10 ">
+                <img class=" " src="img/p2-1-1.jpg" alt="" class="object-cover block w-full h-full ">
+                <div
+                    class="absolute bottom-10 left-2 text-black capitalize bg-amber-50 w-[190px] h-[50px] rounded-[100px] flex justify-center items-center">
+                    <span>face wash</span>
+                </div>
+                <span
+                    class="absolute bottom-12 left-46  w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+
+                </span>
+
+
+            </div>
+            <div
+                class="relative  overflow-hidden sm:w-[45%] lg:w-[24%] h-[420px] rounded-2xl after:z-[5] after:content-[''] after:absolute after:w-[100%] after:h-[100%] after:opacity-0 after:bg-black/90 after:left-0 after:top-0 after:transition after:duration-200 hover:after:opacity-10 ">
+                <img class=" " src="img/c1.jpg" alt="" class="object-cover block overflow-hidden w-full h-full">
+                <div
+                    class="absolute bottom-10 left-2 capitalize text-black bg-amber-50 w-[190px] h-[50px] rounded-[100px] flex justify-center items-center">
+                    <span>face wash</span>
+                </div>
+                <span
+                    class="absolute bottom-12 left-46 capitalize w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+
+                </span>
+
+
+            </div>
+            <div
+                class="relative  overflow-hidden sm:w-[45%] lg:w-[24%] h-[420px] rounded-2xl after:z-[5] after:content-[''] after:absolute after:w-[100%] after:h-[100%] after:opacity-0 after:bg-black/90 after:left-0 after:top-0 after:transition after:duration-200 hover:after:opacity-10 ">
+                <img class=" " src="img/p2-5.webp" alt="" class="w-full h-full object-cover block">
+                <div
+                    class="absolute bottom-10 left-2 text-black capitalize bg-amber-50 w-[190px] h-[50px] rounded-[100px] flex justify-center items-center">
+                    <span>face wash</span>
+                </div>
+                <span
+                    class="absolute bottom-12 left-46  w-9 h-9 rounded-full bg-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+
+                </span>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- new section -->
+    <section>
+        <div class="flex flex-col lg:flex-row  ">
+            <div class="rt flex flex-wrap flex-col gap-4 py-4 mx-4">
+                <h3 class="text-5xl w-[300px]">Clean, Beyond Reproach Skincare.</h3>
+                <figure class=" hidden  lg:flex  w-[250px]">
+                    <img src="img/circle-line.png" alt="" class="mx-60">
+                </figure>
+                <figure class="flex  w-[300px]">
+                    <img src="img/feature-1.webp" alt="">
+                </figure>
+            </div>
+            <div class=" flex  flex-col  mt-[40%] mx-14 gap-2 ">
+                <p class=" w-[400px] lg:w-[480px] text-xl flex  ">We love it for modern UI design
+                    because of its simple, clean, and distinctive geometric style and the
+                    designers actively work. FEATHERLIGHT FEEL Experience unparalleled comfort with our breathable
+                    hijabs, perfect for any season.</p>
+                <a href=""
+                    class="border-black border-2  h-[30px] w-[170px]  text-center rounded-2xl transition duration-200 hover:bg-black hover:text-white uppercase justify-center items-end ">explore
+                    products</a>
+
+            </div>
+            <div class=" lg:w-1/3 w-full  h-[580px] items-center justify-center flex mt-32  mx-3 ">
+                <img src="img/feature-6.webp" class="h-full w-full" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end this section -->
+    <section>
+        <div class=" py-10 flex  flex-col lg:flex-row  ">
+            <div class="flex lg:w-1/3 flex-col bg-[#ECFF9F] h-[580px] ">
+                <h3 class="text-4xl w-[250px] mx-4 uppercase ">Clean, Conscious, Performance</h3>
+                <img src="img/circle-line.png" class="w-[490px]" alt="">
+                <p class="capitalize text-xl w-[400px] mx-4">Unreservedly honest products that truly work, be kind to
+                    skin
+                    and the planet – no exceptions!</p>
+            </div>
+
+            <figure class=" flex lg:w-1/3 w-full  h-[580px] "><img src="img/hero.png" alt="" class="w-full h-full">
+            </figure>
+
+            <div class="w-full flex flex-wrap lg:w-1/3 justify-center">
+                <figure class=" ">
+                    <img src="img/feature-2.png" alt="" class="w-full ">
+                </figure>
+                <h3 class="text-3xl text-center">Radical Transparency.
+                    Radical Results.</h3>
+                <p class="text-xl  w-[380px] text-center">Skin care packed with anti oxidants, skinreplenishing and skin
+                    restoring
+                    agents instable pH don’t promise miracles,but deliver real results.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end this section -->
+    <section>
+        <div class="flex mx-1 justify-between items-center  flex-col lg:flex-row ">
+            <div class=""><a href=""
+                    class="border inline-block w-[200px] h-[45px] border-black rounded-2xl text-center  text-2xl transition duration-200 hover:bg-black hover:text-white">explore
+                    collection</a></div>
+            <div>
+                <h2 class="w-[120px] h-[30px] text-3xl text-gray-400 ">Explore
+                    Face Wash
+                </h2>
+
+                <img src="img/circle-line.png" class="w-[150px]" alt="">
+            </div>
+            <div>
+                <p class="w-[450px] text-xl text-center">A gentle cleanser for all skin types. Removes impurities and
+                    makeup. Leaves skin fresh and clean.
+                    Perfect for daily use.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- products -->
+    <section>
+        <div class="flex flex-col lg:flex-row lg:gap-3 justify-center items-center gap-28  ">
+            <figure class="relative flex  group w-[450px] h-[350px] *:absolute *:rounded-2xl ">
+                <img src="img/face-1.webp" alt=""
+                    class="left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity  ">
+                <img src="img/face-1-1.webp" alt=""
+                    class=" top-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity   ">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">55$</h3>
+                </figcaption>
+            </figure>
+            <figure class="relative  group w-[450px] h-[350px] *:absolute *:rounded-2xl">
+                <img src="img/face-2.webp" alt=""
+                    class=" top-0 left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity">
+                <img src="img/face-2-2.webp" alt=""
+                    class="top-0 left-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">60$</h3>
+                </figcaption>
+            </figure>
+            <figure class="relative    group w-[450px] h-[350px] *:absolute *:rounded-2xl">
+                <img src="img/face-3.webp" alt=""
+                    class=" left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity">
+                <img src="img/face-3-3.jpg" alt=""
+                    class="top-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">50$</h3>
+                </figcaption>
+            </figure>
+            <figure class="relative   group w-[450px] h-[350px] *:absolute *:rounded-2xl">
+                <img src="img/face-4.webp" alt=""
+                    class="left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity">
+                <img src="img/face-2-2.webp" alt=""
+                    class="top-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">45$</h3>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- newsection -->
+    <section>
+        <div class="flex mx-1 justify-between items-center pt-40 flex-col lg:flex-row ">
+            <div class=""><a href=""
+                    class="border inline-block w-[200px] h-[45px] border-black rounded-2xl text-center  text-2xl transition duration-200 hover:bg-black hover:text-white">explore
+                    collection</a></div>
+            <div>
+                <h2 class="w-[120px] h-[30px] text-3xl text-gray-400 ">Explore
+                    Face Wash
+                </h2>
+
+                <img src="img/circle-line.png" class="w-[150px]" alt="">
+            </div>
+            <div>
+                <p class="w-[450px] text-xl text-center">A gentle cleanser for all skin types. Removes impurities and
+                    makeup. Leaves skin fresh and clean.
+                    Perfect for daily use.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end this -->
+
+    <section>
+        <div class="flex flex-col lg:flex-row lg:gap-3 justify-center items-center gap-28   ">
+            <figure class="relative flex  group w-[450px] h-[350px] *:absolute *:rounded-2xl ">
+                <img src="img/p3-3.webp" alt=""
+                    class="left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity  ">
+                <img src="img/p3-1.jpg" alt=""
+                    class=" top-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity   ">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">55$</h3>
+                </figcaption>
+            </figure>
+            <figure class="relative  group w-[450px] h-[350px] *:absolute *:rounded-2xl">
+                <img src="img/p3-2.jpg" alt=""
+                    class=" top-0 left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity">
+                <img src="img/p3-5-5.jpg" alt=""
+                    class="top-0 left-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">60$</h3>
+                </figcaption>
+            </figure>
+            <figure class="relative    group w-[450px] h-[350px] *:absolute *:rounded-2xl">
+                <img src="img/p3-4.jpg" alt=""
+                    class=" left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity">
+                <img src="img/p3-2.jpg" alt=""
+                    class="top-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">50$</h3>
+                </figcaption>
+            </figure>
+            <figure class="relative   group w-[450px] h-[350px] *:absolute *:rounded-2xl">
+                <img src="img/p3-1.jpg" alt=""
+                    class="left-0 opacity-100 duration-300 group-hover:opacity-0 transition-opacity">
+                <img src="img/p3-3.webp" alt=""
+                    class="top-0 opacity-0 duration-300 group-hover:opacity-100 transition-opacity">
+                <figcaption class="absolute  top-3 ">
+                    <h3 class="text-2xl">45$</h3>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- end this -->
+    <section>
+        <div class="flex flex-wrap  ">
+            <figure class="flex flex-col mt-40 *:rounded-2xl">
+                <img src="img/circle-line.png" alt="" class="w-[250px] mx-52 ">
+                <img src="img/feature-3.webp" alt="" class="w-[550px] mx-10 ">
+            </figure>
+            <div class=" flex flex-col mt-[30%] justify-start m-auto ">
+                <h2 class="text-6xl mt-2 w-[550px]">Clean, Conscious, Performance Skincare.</h2>
+                <h3 class="text-2xl mt-3 ">Radical Transparency.</h3>
+                <h3
+                    class="text-2xl mt-4 relative after:absolute after:content-[''] after:bg-black/15 after:top-0 after:left-0 after:h-[1px] after:w-[100%] ">
+                    Clean, Beyond Reproach</h3>
+                <h3
+                    class="text-2xl mt-5 relative after:absolute after:content-[''] after:bg-black/15 after:top-0 after:left-0 after:h-[1px] after:w-[100%]">
+                    Conscious & Responsible</h3>
+                <h3
+                    class="text-2xl mt-6 relative after:absolute after:content-[''] after:bg-black/15 after:top-0 after:left-0 after:h-[1px] after:w-[100%]">
+                    Potent & Multi Tasking</h3>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+    <section>
+        <div class="flex flex-wrap mt-10 mx-8 justify-between">
+            <h3 class="text-6xl w-[550px]">Want product news and updates? Sign up for our newsletter.</h3>
+            <form action="" class="flex mt-10 ">
+                <input type="text" placeholder="enter your email"
+                    class="relative rounded-2xl text-black capitalize w-[350px] h-[40px] border border-gray-50 bg-gray-300">
+                <span
+                    class=" text-black rounded-4xl w-[35px] h-[30px] text-center absolute right-10  flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </span>
+
+
+            </form>
+
+
+
+
+        </div>
+    </section>
+    <!-- foterr -->
+    <section>
+        <div class="w-[100%] h-[1px] bg-gray-400 mt-2 "></div>
+        <div class="flex flex-wrap gap-4 justify-between mt-3 mx-8">
+            <div class=" flex items-center w-1/5 mt-3 mx-8">
+                <svg width="107" height="32" viewBox="0 0 107 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M27.776 7.52C27.776 9.33333 27.136 10.9013 25.856 12.224C24.576 13.5253 22.7093 14.464 20.256 15.04C21.5787 15.4027 22.5813 16 23.264 16.832C23.9467 17.6427 24.288 18.5813 24.288 19.648C24.288 21.3333 23.7547 22.7947 22.688 24.032C21.6427 25.2693 20.1067 26.2293 18.08 26.912C16.0533 27.5733 13.6107 27.904 10.752 27.904C9.68533 27.904 8.832 27.872 8.192 27.808C8.17067 28.4053 7.91467 28.8533 7.424 29.152C6.93333 29.4507 6.304 29.6 5.536 29.6C4.768 29.6 4.23467 29.4293 3.936 29.088C3.65867 28.7467 3.54133 28.2453 3.584 27.584C3.776 24.5973 4.14933 21.472 4.704 18.208C5.25867 14.9227 5.96267 11.7547 6.816 8.704C6.96533 8.17067 7.264 7.79733 7.712 7.584C8.16 7.37067 8.74667 7.264 9.472 7.264C10.7733 7.264 11.424 7.62667 11.424 8.352C11.424 8.65067 11.36 8.992 11.232 9.376C10.6773 11.04 10.1227 13.3013 9.568 16.16C9.01333 18.9973 8.61867 21.7067 8.384 24.288C9.408 24.3733 10.24 24.416 10.88 24.416C13.8667 24.416 16.0533 23.9893 17.44 23.136C18.848 22.2613 19.552 21.152 19.552 19.808C19.552 18.8693 19.1467 18.08 18.336 17.44C17.5467 16.8 16.2133 16.448 14.336 16.384C13.9093 16.3627 13.6107 16.256 13.44 16.064C13.2693 15.872 13.184 15.5627 13.184 15.136C13.184 14.5173 13.312 14.016 13.568 13.632C13.824 13.248 14.2933 13.0453 14.976 13.024C16.4907 12.9813 17.856 12.7573 19.072 12.352C20.3093 11.9467 21.28 11.3813 21.984 10.656C22.688 9.90933 23.04 9.04533 23.04 8.064C23.04 6.82667 22.432 5.856 21.216 5.152C20 4.42667 18.1333 4.064 15.616 4.064C13.3333 4.064 11.1253 4.36267 8.992 4.96C6.85867 5.536 5.04533 6.272 3.552 7.168C2.86933 7.57333 2.29333 7.776 1.824 7.776C1.44 7.776 1.14133 7.648 0.928 7.392C0.736 7.11467 0.64 6.77333 0.64 6.368C0.64 5.83467 0.746667 5.376 0.96 4.992C1.19467 4.608 1.73867 4.17067 2.592 3.68C4.384 2.656 6.48533 1.856 8.896 1.28C11.3067 0.703999 13.7707 0.415998 16.288 0.415998C20.1493 0.415998 23.0293 1.06667 24.928 2.368C26.8267 3.66933 27.776 5.38667 27.776 7.52ZM31.5718 10.976C30.6758 10.976 30.0038 10.7733 29.5558 10.368C29.1078 9.94133 28.8838 9.35467 28.8838 8.608C28.8838 7.86133 29.1718 7.24267 29.7478 6.752C30.3451 6.24 31.0811 5.984 31.9558 5.984C32.7451 5.984 33.3851 6.176 33.8758 6.56C34.3664 6.944 34.6118 7.488 34.6118 8.192C34.6118 9.04533 34.3344 9.728 33.7798 10.24C33.2251 10.7307 32.4891 10.976 31.5718 10.976ZM31.3158 28.16C29.9291 28.16 28.9158 27.6693 28.2758 26.688C27.6571 25.7067 27.3478 24.4053 27.3478 22.784C27.3478 21.824 27.4651 20.5973 27.6998 19.104C27.9558 17.5893 28.2758 16.1813 28.6598 14.88C28.8518 14.1973 29.1078 13.728 29.4278 13.472C29.7478 13.216 30.2598 13.088 30.9638 13.088C32.0518 13.088 32.5958 13.4507 32.5958 14.176C32.5958 14.7093 32.3931 15.9467 31.9878 17.888C31.4758 20.2347 31.2198 21.824 31.2198 22.656C31.2198 23.296 31.3051 23.7867 31.4758 24.128C31.6464 24.4693 31.9344 24.64 32.3398 24.64C32.7238 24.64 33.2038 24.3733 33.7798 23.84C34.3558 23.3067 35.1238 22.464 36.0838 21.312C36.3398 21.0133 36.6278 20.864 36.9478 20.864C37.2251 20.864 37.4384 20.992 37.5878 21.248C37.7584 21.504 37.8438 21.856 37.8438 22.304C37.8438 23.1573 37.6411 23.8187 37.2358 24.288C35.1238 26.8693 33.1504 28.16 31.3158 28.16ZM49.5268 20.864C49.8041 20.864 50.0174 20.992 50.1667 21.248C50.3374 21.504 50.4228 21.856 50.4228 22.304C50.4228 23.1573 50.2201 23.8187 49.8148 24.288C48.8974 25.4187 47.8948 26.3467 46.8068 27.072C45.7188 27.7973 44.4708 28.16 43.0628 28.16C38.7108 28.16 36.5348 25.0987 36.5348 18.976C36.5348 18.0373 36.5668 17.088 36.6308 16.128H35.3828C34.7428 16.128 34.3054 16.0107 34.0708 15.776C33.8574 15.5413 33.7508 15.168 33.7508 14.656C33.7508 13.4613 34.2308 12.864 35.1908 12.864H37.0148C37.3774 10.5173 37.9321 8.37333 38.6788 6.432C39.4254 4.49067 40.3214 2.944 41.3668 1.792C42.4334 0.639999 43.5748 0.0639992 44.7908 0.0639992C45.6868 0.0639992 46.3908 0.458666 46.9028 1.248C47.4148 2.03733 47.6708 3.02933 47.6708 4.224C47.6708 7.53067 46.2841 10.4107 43.5108 12.864H47.0948C47.4361 12.864 47.6814 12.9387 47.8308 13.088C47.9801 13.2373 48.0548 13.5147 48.0548 13.92C48.0548 15.392 46.8494 16.128 44.4388 16.128H40.5348C40.4921 17.1947 40.4708 18.0267 40.4708 18.624C40.4708 20.8427 40.7268 22.4 41.2388 23.296C41.7721 24.192 42.6041 24.64 43.7348 24.64C44.6521 24.64 45.4628 24.3627 46.1668 23.808C46.8708 23.2533 47.7028 22.4213 48.6628 21.312C48.9188 21.0133 49.2068 20.864 49.5268 20.864ZM43.9268 3.136C43.6068 3.136 43.2441 3.54133 42.8388 4.352C42.4548 5.14133 42.0814 6.25067 41.7188 7.68C41.3774 9.088 41.0894 10.656 40.8548 12.384C42.1134 11.296 43.0521 10.08 43.6708 8.736C44.3108 7.37067 44.6308 6.13333 44.6308 5.024C44.6308 3.76533 44.3961 3.136 43.9268 3.136ZM72.6173 8.928C72.6173 10.7413 72.1479 12.4053 71.2093 13.92C70.2706 15.4347 68.9053 16.672 67.1133 17.632C65.3213 18.592 63.1879 19.1573 60.7133 19.328L59.3373 27.04C58.8039 30.0053 57.3533 31.488 54.9853 31.488C53.6839 31.488 52.4786 31.104 51.3693 30.336C50.2813 29.568 49.4066 28.3947 48.7453 26.816C48.0839 25.2373 47.7533 23.296 47.7533 20.992C47.7533 16.6613 48.4466 12.992 49.8333 9.984C51.2413 6.95467 53.1186 4.69333 55.4653 3.2C57.8333 1.68533 60.4359 0.927999 63.2733 0.927999C65.2786 0.927999 66.9746 1.28 68.3613 1.984C69.7693 2.688 70.8253 3.648 71.5293 4.864C72.2546 6.05866 72.6173 7.41333 72.6173 8.928ZM61.2893 16.032C65.6626 15.4773 67.8493 13.2053 67.8493 9.216C67.8493 7.808 67.3799 6.66667 66.4413 5.792C65.5239 4.896 64.0946 4.448 62.1533 4.448C59.9559 4.448 58.0359 5.14133 56.3933 6.528C54.7719 7.91467 53.5133 9.84533 52.6173 12.32C51.7426 14.7733 51.3053 17.5787 51.3053 20.736C51.3053 22.0587 51.4333 23.232 51.6893 24.256C51.9666 25.28 52.3079 26.08 52.7133 26.656C53.1399 27.2107 53.5453 27.488 53.9293 27.488C54.4626 27.488 54.8679 26.752 55.1453 25.28L56.2013 19.232C55.3693 19.104 55.0066 19.0507 55.1133 19.072C54.4733 18.9653 54.0573 18.7733 53.8653 18.496C53.6733 18.1973 53.5773 17.824 53.5773 17.376C53.5773 16.9067 53.7053 16.5333 53.9613 16.256C54.2386 15.9787 54.6119 15.84 55.0813 15.84C55.2946 15.84 55.4546 15.8507 55.5613 15.872C56.0733 15.9573 56.4679 16.0107 56.7453 16.032C57.0226 14.368 57.4173 12.1387 57.9293 9.344C58.0573 8.61867 58.3453 8.10667 58.7933 7.808C59.2626 7.488 59.8066 7.328 60.4253 7.328C61.1293 7.328 61.6306 7.46667 61.9293 7.744C62.2493 8 62.4093 8.416 62.4093 8.992C62.4093 9.33333 62.3879 9.61067 62.3453 9.824L61.2893 16.032ZM74.7845 28.16C73.4618 28.16 72.4058 27.68 71.6165 26.72C70.8272 25.76 70.4325 24.5013 70.4325 22.944C70.4325 21.2373 70.8272 19.6267 71.6165 18.112C72.4058 16.576 73.4512 15.3493 74.7525 14.432C76.0752 13.4933 77.4725 13.024 78.9445 13.024C79.4138 13.024 79.7232 13.12 79.8725 13.312C80.0432 13.4827 80.1818 13.8027 80.2885 14.272C80.7365 14.1867 81.2058 14.144 81.6965 14.144C82.7418 14.144 83.2645 14.5173 83.2645 15.264C83.2645 15.712 83.1045 16.7787 82.7845 18.464C82.2938 20.9173 82.0485 22.624 82.0485 23.584C82.0485 23.904 82.1232 24.16 82.2725 24.352C82.4432 24.544 82.6565 24.64 82.9125 24.64C83.3178 24.64 83.8085 24.384 84.3845 23.872C84.9605 23.3387 85.7392 22.4853 86.7205 21.312C86.9765 21.0133 87.2645 20.864 87.5845 20.864C87.8618 20.864 88.0752 20.992 88.2245 21.248C88.3952 21.504 88.4805 21.856 88.4805 22.304C88.4805 23.1573 88.2778 23.8187 87.8725 24.288C86.9978 25.376 86.0698 26.2933 85.0885 27.04C84.1072 27.7867 83.1578 28.16 82.2405 28.16C81.5365 28.16 80.8858 27.9253 80.2885 27.456C79.7125 26.9653 79.2752 26.304 78.9765 25.472C77.8672 27.264 76.4698 28.16 74.7845 28.16ZM75.9365 24.928C76.4058 24.928 76.8538 24.6507 77.2805 24.096C77.7072 23.5413 78.0165 22.8053 78.2085 21.888L79.3925 16C78.4965 16.0213 77.6645 16.3627 76.8965 17.024C76.1498 17.664 75.5525 18.5173 75.1045 19.584C74.6565 20.6507 74.4325 21.7813 74.4325 22.976C74.4325 23.6373 74.5605 24.128 74.8165 24.448C75.0938 24.768 75.4672 24.928 75.9365 24.928ZM88.1518 28.16C87.3411 28.16 86.7651 27.7333 86.4238 26.88C86.1038 26.0267 85.9438 24.6613 85.9438 22.784C85.9438 20.0107 86.3384 17.376 87.1278 14.88C87.3198 14.2613 87.6291 13.8133 88.0558 13.536C88.5038 13.2373 89.1224 13.088 89.9118 13.088C90.3384 13.088 90.6371 13.1413 90.8078 13.248C90.9784 13.3547 91.0638 13.5573 91.0638 13.856C91.0638 14.1973 90.9038 14.9653 90.5838 16.16C90.3704 17.0133 90.1998 17.76 90.0718 18.4C89.9438 19.04 89.8371 19.8293 89.7518 20.768C90.4558 18.9333 91.2451 17.44 92.1198 16.288C92.9944 15.136 93.8478 14.3147 94.6798 13.824C95.5331 13.3333 96.3118 13.088 97.0158 13.088C97.6984 13.088 98.2104 13.2693 98.5518 13.632C98.9144 13.9733 99.0958 14.4853 99.0958 15.168C99.0958 15.7227 98.9784 16.768 98.7438 18.304C98.5304 19.6053 98.3598 20.8427 98.2318 22.016C98.1038 23.168 98.0398 24.4587 98.0398 25.888C98.0398 26.6987 97.8691 27.2853 97.5278 27.648C97.2078 27.9893 96.6744 28.16 95.9278 28.16C95.2238 28.16 94.7118 27.9787 94.3918 27.616C94.0718 27.2533 93.9118 26.7093 93.9118 25.984C93.9118 25.1307 94.0611 23.7227 94.3598 21.76C94.6158 20.0533 94.7438 18.9653 94.7438 18.496C94.7438 18.1547 94.6264 17.984 94.3918 17.984C94.1144 17.984 93.7198 18.3467 93.2078 19.072C92.7171 19.776 92.2051 20.7147 91.6718 21.888C91.1598 23.0613 90.7438 24.2987 90.4238 25.6C90.1891 26.6027 89.9118 27.2853 89.5918 27.648C89.2931 27.9893 88.8131 28.16 88.1518 28.16ZM103.588 28.16C102.649 28.16 101.934 27.904 101.444 27.392C100.974 26.88 100.74 26.208 100.74 25.376C100.74 24.416 101.006 23.648 101.54 23.072C102.094 22.496 102.862 22.208 103.844 22.208C104.782 22.208 105.486 22.4427 105.956 22.912C106.446 23.36 106.692 24.032 106.692 24.928C106.692 25.9093 106.414 26.6987 105.86 27.296C105.305 27.872 104.548 28.16 103.588 28.16Z"
+                        fill="currentColor"></path>
+
+                </svg>
+            </div>
+            <div>
+                <ul class="capitalize">
+                    <li><a href="" class="text-2xl text-black">Solutions</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Analytics</a></li>
+                    <li><a href="">Automation</a></li>
+                    <li><a href="">Automation</a></li>
+
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="" class="text-2xl text-black">Solutions</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Analytics</a></li>
+                    <li><a href="">Automation</a></li>
+                    <li><a href="">Automation</a></li>
+
+
+                </ul>
+            </div>
+            <div>
+                <ul class="">
+                    <li><a href="" class="text-xl text-black ">Social</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

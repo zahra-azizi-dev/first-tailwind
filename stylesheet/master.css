@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base{
+    body{
+        font-family: maryam;
+         overflow-x: hidden; 
+ 
+    }
+   @font-face {
+    font-family: maryam;
+    src: url(../font/EBGaramond-VariableFont_wght.ttf);
+   }
+
+
+}
+
+@layer components{
+   /* .try{
+    @apply w-full flex flex-col
+   } */
+}
+
+@layer utilities{
+    .row{
+        @apply flex flex-wrap w-full
+    }
+}
